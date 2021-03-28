@@ -1,0 +1,229 @@
+{
+  "revision_id": "fae4f1421598a5b7dff252117689d9eeaf24d868b10b9524f0cd8c7adcdb7181",
+  "name": "web-server",
+  "run_list": [
+    "recipe[bootstrap_a_node::default]",
+    "recipe[chef-client::default]",
+    "recipe[nginx_setup::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "bootstrap_a_node": {
+      "version": "2.3.2",
+      "identifier": "47af9e9eec2af1c79aded230b75aaffd4fb773f7",
+      "dotted_decimal_identifier": "20177819152427761.56183802165245786.193502499009527",
+      "cache_key": "bootstrap_a_node-2.3.2",
+      "origin": "https://automate.cl/organizations/first-org",
+      "source_options": {
+        "chef_server": "https://automate.cl/organizations/first-org",
+        "version": "2.3.2"
+      }
+    },
+    "chef-client": {
+      "version": "12.3.3",
+      "identifier": "7ab37c81c66070be34d3a5f59cc9c94c87ad00e7",
+      "dotted_decimal_identifier": "34537294493278320.53538329202105545.221330530959591",
+      "cache_key": "chef-client-12.3.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.3/download",
+        "version": "12.3.3"
+      }
+    },
+    "chef_client_updater": {
+      "version": "3.11.1",
+      "identifier": "b51c39cb15b7d06bfbefb9f8e795823c7db8f076",
+      "dotted_decimal_identifier": "50978005330540496.30394829543892885.143196318920822",
+      "cache_key": "chef_client_updater-3.11.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/3.11.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/3.11.1/download",
+        "version": "3.11.1"
+      }
+    },
+    "cron": {
+      "version": "6.4.0",
+      "identifier": "c112ad00b72022a61c427b3deedef49b3a7e043d",
+      "dotted_decimal_identifier": "54345204755800098.46755917995044574.268947538445373",
+      "cache_key": "cron-6.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.4.0/download",
+        "version": "6.4.0"
+      }
+    },
+    "logrotate": {
+      "version": "2.3.0",
+      "identifier": "75c4e3e2c86d65f88e5fea6ac7ad97eaff009185",
+      "dotted_decimal_identifier": "33149055316553061.69962336830146477.167035556368773",
+      "cache_key": "logrotate-2.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.3.0/download",
+        "version": "2.3.0"
+      }
+    },
+    "nginx": {
+      "version": "11.4.0",
+      "identifier": "0eb018ca28d62d72746538c5dc7bbc6ef402fb9b",
+      "dotted_decimal_identifier": "4134270191326765.32216125438024827.207184726260635",
+      "cache_key": "nginx-11.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/11.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/11.4.0/download",
+        "version": "11.4.0"
+      }
+    },
+    "nginx_setup": {
+      "version": "1.0.0",
+      "identifier": "678eb977620d9321044754000f25d126b5a4e660",
+      "dotted_decimal_identifier": "29148849824206227.9293378629930789.229964186445408",
+      "cache_key": "nginx_setup-5a0adf7dbe54b54edc762f96b149f4e6a15a0650",
+      "origin": "git@github.com:first-org-chef-repo/nginx_setup-cookbook.git",
+      "source_options": {
+        "git": "git@github.com:first-org-chef-repo/nginx_setup-cookbook.git",
+        "revision": "5a0adf7dbe54b54edc762f96b149f4e6a15a0650",
+        "tag": "v1.1"
+      }
+    },
+    "ohai": {
+      "version": "5.3.0",
+      "identifier": "3ad58179813321f2497a12ea4e2bbb6018a47ee3",
+      "dotted_decimal_identifier": "16560300715225889.68197733016161835.206021404688099",
+      "cache_key": "ohai-5.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+        "version": "5.3.0"
+      }
+    },
+    "slack_handler": {
+      "version": "1.0.0",
+      "identifier": "1d7376cf1221a8976fa8b3ae513aacd0d5f5397a",
+      "dotted_decimal_identifier": "8289728442016168.42625491843043642.190012942793082",
+      "cache_key": "slack_handler-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/slack_handler/versions/1.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/slack_handler/versions/1.0.0/download",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "chef_client": {
+      "interval": 43200,
+      "splay": 21600,
+      "handler": {
+        "slack": {
+          "enabled": false
+        }
+      }
+    },
+    "bootstrap_a_node": {
+      "policy_name": "web-server",
+      "policy_group": "staging",
+      "chef_client": {
+        "version": "16"
+      },
+      "timezone": "Asia/Tokyo"
+    }
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "bootstrap_a_node",
+        "= 2.3.2"
+      ],
+      [
+        "chef-client",
+        "= 12.3.3"
+      ],
+      [
+        "chef_client_updater",
+        "= 3.11.1"
+      ],
+      [
+        "cron",
+        "= 6.4.0"
+      ],
+      [
+        "logrotate",
+        "= 2.3.0"
+      ],
+      [
+        "nginx",
+        "= 11.4.0"
+      ],
+      [
+        "nginx_setup",
+        "= 1.0.0"
+      ],
+      [
+        "ohai",
+        "= 5.3.0"
+      ],
+      [
+        "slack_handler",
+        "= 1.0.0"
+      ]
+    ],
+    "dependencies": {
+      "bootstrap_a_node (2.3.2)": [
+        [
+          "slack_handler",
+          ">= 0.0.0"
+        ],
+        [
+          "chef_client_updater",
+          ">= 0.0.0"
+        ],
+        [
+          "chef-client",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef-client (12.3.3)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
+      "chef_client_updater (3.11.1)": [
+
+      ],
+      "cron (6.4.0)": [
+
+      ],
+      "logrotate (2.3.0)": [
+
+      ],
+      "nginx (11.4.0)": [
+        [
+          "ohai",
+          "~> 5.2"
+        ]
+      ],
+      "nginx_setup (1.0.0)": [
+        [
+          "nginx",
+          "~> 11.4.0"
+        ]
+      ],
+      "ohai (5.3.0)": [
+
+      ],
+      "slack_handler (1.0.0)": [
+
+      ]
+    }
+  }
+}
